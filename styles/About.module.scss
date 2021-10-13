@@ -1,0 +1,197 @@
+@import './Common.module.scss';
+
+/* ----------- into ----------- */
+.about_intro {
+    font-size: $medium;
+}
+
+
+/* ----------- service list ----------- */
+.about_services {
+    font-size: $medium;
+    color: $grey;
+}
+
+.the_list {
+    margin-top: 4em;
+    @media screen and (max-width: $breakpoint-tablet) {
+        margin-top: 2em;
+    }
+}
+
+
+/* ----------- dots in service list ----------- */
+.dots_wrapper {
+    // display: inline;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid purple;
+
+
+    .dots {
+        text-align: center;
+        text-align: -webkit-center;
+
+        .dots_inner_wrapper {
+            padding: .1rem;
+            display: table-cell;
+
+            .active_dot {
+                background-color: $blue !important;
+            }
+    
+            .service_dot {
+                width: 20px;
+                height: 20px;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: $lightgrey;
+            }
+        }
+    }
+}
+
+/* ----------- clients ----------- */
+.clients {
+    margin-top: 3em;
+    
+    p {
+        padding-bottom: .4em;
+        font-size: $medium;
+    }
+}
+
+
+/* ----------- founder section ----------- */
+.paragraph {
+    padding-bottom: 3em;
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+
+/* ----------- industry list ----------- */
+.industry_list {
+    p {
+        margin-bottom: 1em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/* ----------- statistics ----------- */
+.about_stats {
+    padding: 3em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////// introduction section
+.introduction_section {
+    padding: 0 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+    }
+
+    p {
+        width: 50%;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
+
+        a {
+            text-align: right;
+        }
+    }
+}
+
+
+///////////////// values section
+.values_section {
+    padding: 0 6rem;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+    }
+
+    .the_values {
+        margin-top: 1rem;
+        font-size: 36px;
+        // text-transform: none !important;
+    }
+}
+
+
+///////////////// graphic section
+.about_graphic {
+    height: 500px;
+    margin: 0 6rem;
+    background-color: $lightgrey;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        height: 400px;
+        margin: 0 2rem;
+    }
+}
+
+
+///////////////// outro section
+.outro_section {
+    padding: 0 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+    }
+
+    .technologists {
+        width: 50%;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
+    }
+
+    .contact_us {
+        margin-top: 4rem;
+        text-align: right !important;
+    }
+}

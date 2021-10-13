@@ -1,0 +1,279 @@
+@import './Common.module.scss';
+
+/* ----------- all work pages ----------- */ 
+.case_details {
+  padding-bottom: 2em;
+}
+
+
+/* ----------- case study header ----------- */
+.case_header {
+  padding-top: 6em;
+
+  .case_header_title {
+    div {
+      width: 100%;
+      background-color: #fff;
+      overflow: hidden;
+      color: transparent;
+  
+      p {
+        font-size: 70px;
+        line-height: 80px;
+        text-transform: uppercase;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        @media screen and (max-width: $breakpoint-tablet) {
+          font-size: 60px;
+          background-size: inherit;
+        }
+      }
+    }
+  }
+  
+  .case_header_details {
+    .case_project {
+      padding-bottom: 2em;
+      font-size: $medium;
+      color: $grey;
+    }
+    
+    .categories {
+      p {
+        padding: 1em 0;
+        border-top: 1px solid $lightgrey;
+        &:last-child {
+          border-bottom: 1px solid $lightgrey;
+        }
+      }
+    }
+
+    a {
+      p {
+        padding-top: 3em;
+        width: 100%;
+        text-align: right;
+        color: $blue;
+      }
+    }
+  }
+}
+
+
+/* ----------- case pages ----------- */
+.case_intro {
+  padding-top: 4em;
+}
+
+.case_paragraph {
+  .case_paragraph_title {
+    padding-bottom: 1em;
+    font-size: 34px;
+  }
+
+  .case_paragraph_text {
+    padding-bottom: 4em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////// page of all cases 
+
+
+
+///////////////// case study pages 
+// .case_study {
+//   padding: 0 6rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     padding: 0 2rem;
+//   }
+
+//   .case_study_introduction {
+//     padding-top: 4rem;
+//   }
+// }
+
+// .case_paragraph_heading {
+//   margin-bottom: 1rem;
+//   font-size: 30px;
+//   font-weight: 200;
+// }
+
+// .case_study_device_left {
+//   margin: 0 auto;
+//   padding-right: 2rem;
+//   text-align: right;
+
+//   img {
+//     width: 250px;
+//   }
+// }
+
+// .case_study_device_right {
+//   margin: 0 auto;
+//   padding-left: 2rem;
+//   text-align: left;
+
+//   img {
+//     width: 250px;
+//   }
+// }
+
+// .case_study_device_left, .case_study_device_right {
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     margin-bottom: 2rem;
+//     padding: 0;
+//     text-align: center;
+//   }
+// }
+
+// .case_media_left {
+//   padding-right: 1rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     padding: 0 0 2rem 0;
+//   }
+// }
+
+// .case_media_right {
+//   padding-left: 1rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     padding: 0;
+//   }
+// }
+
+// .case_study_square_left {
+//   text-align: right;
+//   padding-right: 2rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     padding: 0;
+//   }
+// }
+
+// .case_study_square_right {
+//   text-align: left;
+//   padding-left: 2rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     padding: 0;
+//   }
+// }
+
+// .case_study_square_left, .case_study_square_right {
+//   img {
+//     height: 400px;
+//     width: auto;
+
+//     @media screen and (max-width: $breakpoint-tablet) {
+//       padding: 0;
+//       text-align: center;
+//       margin-bottom: 2rem;
+//       width: 100%;
+//       height: auto;
+//     }
+//   }
+// }
+
+// .case_study_space {
+//   height: 6rem;
+
+//   @media screen and (max-width: $breakpoint-tablet) {
+//     height: 4rem;
+//   }
+// }
+
+// .case_border {
+//   border: 1px solid $lightgrey;
+// }
+
+
+// ///////////////// case study footer component 
+// .case_study_footer {
+//   margin-top: 6rem;
+//   padding-top: 4rem;
+//   border-top: 1px solid $lightgrey;
+
+//   .next_title {
+//     margin-bottom: 2rem;
+//   }
+
+//   a {
+//     // color: $grey !important;
+//     text-transform: capitalize;
+//   }
+// }
+
+// .last_work {
+//   margin-top: 6rem;
+//   padding-top: 4rem;
+//   border-top: 1px solid $grey;
+//   text-align: right;
+// }
+
+

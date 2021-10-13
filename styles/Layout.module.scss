@@ -1,0 +1,15 @@
+@import './Common.module.scss';
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  padding-top: 80px;
+  flex: 1;
+  // @media screen and (max-width: $breakpoint-tablet) {
+  //   padding-top: 80px;
+  // } 
+}

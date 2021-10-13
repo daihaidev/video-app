@@ -1,0 +1,319 @@
+@import './Common.module.scss';
+
+/* ----------- cover title ----------- */
+.home_cover {
+  .home_title {
+    padding: 2em 0 3em 0;
+    font-size: 70px;
+    text-transform: capitalize;
+  }
+  
+  .home_intro {
+    p {
+      font-size: 26px;
+    }
+  }
+}
+
+
+/* ----------- what we do ----------- */
+.home_service {
+  p {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/* ----------- selected work ----------- */
+.selected_client {
+  // margin-bottom: .6em;
+  font-size: 30px;
+}
+
+.selected_project {
+  // margin-bottom: 1em;
+  color: $grey;
+  font-size: 20px;
+}
+
+
+/* ----------- clients grid ----------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 0rem;
+  }
+  
+  > div {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    img {
+      position: absolute;
+      max-width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+    }
+  }
+}
+
+
+/* ----------- quote ----------- */
+.quote {
+  padding: 4rem 0;
+
+  .who {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////// media section
+.media_section {
+  display: flex;
+  margin: 0 6rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin: 0 2rem;
+  }
+}
+
+
+///////////////// description section
+.description {
+  text-align: center;
+  padding: 2rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 0 2rem;
+  }
+
+  .animation_text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 200;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 100%;
+      font-size: $medium;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .active {
+      display: inline-block;
+      font-family: 'DM Serif Display', serif;
+      text-transform: capitalize;
+      font-size: 34px;
+      color: $blue;
+      // opacity: 0;
+      animation: fade-word 3s;
+
+      @media screen and (max-width: $breakpoint-tablet) {
+        font-size: 26px;
+      }
+    }
+
+    @keyframes fade-word {
+      0% { opacity: 0 }
+      20% { opacity: 1 }
+      80% { opacity: 1 }
+      100% { opacity: 0 }
+    }
+  }
+}
+
+
+///////////////// selected works section
+.selected_section {
+  padding: 6rem;
+  background-color: $backgroundblack;
+  color: $white;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 2rem;
+  }
+
+  .selected_section_title {
+    margin-bottom: 2rem;
+  }
+
+  .selected_work_comapny {
+    margin-top: 2rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 2rem;
+    }
+  }
+
+  .more_work {
+    margin-top: 2rem;
+    text-align: right;
+  }
+}
+
+
+///////////////// quote section
+.quote_section {
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 60%;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 0 4rem;
+    width: 100%;
+  }
+
+  .said {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    font-weight: 200;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      font-size: 34px;
+    }
+  }
+
+  // .who {
+  //   color: $grey;
+  // }
+}
+
+
+///////////////// article section
+.article_section {
+  padding: 0 6rem;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 0 2rem;
+  }
+
+  .article_section_heading {
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .featured_article_row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .featured_article_image {
+    display: inline-grid;
+    align-items: center;
+    text-align: right;
+  }
+  
+  .featured_article_text {
+    padding: 0 0 0 2rem;
+    display: inline-grid;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      padding: 2rem 0 0;
+    }
+
+    .featured_article_title {
+      .featured_article_abstract {
+        padding-top: 1rem;
+        text-transform: none;
+        font-family: 'Inter', sans-serif;
+  
+        a {
+          color: $blue !important;
+          text-transform: none !important;
+          font-family: initial;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          font-family: 'Inter', sans-serif;
+          font-size: 14px;
+  
+          &:hover {
+            color: $textblack !important;
+          }
+        }
+      }
+    }
+  }
+
+  .more_articles {
+    margin-top: 4rem;
+    text-align: right;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+
+///////////////// test section

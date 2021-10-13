@@ -1,0 +1,121 @@
+@import './Common.module.scss';
+
+/* ----------- contact form ----------- */ 
+// hoc add your code here
+
+
+
+
+/* ----------- offices ----------- */ 
+.address {
+    padding: 2em 0;
+}
+
+.careers_intro {
+    padding-bottom: 4em;
+}
+
+.careers {
+    padding-bottom: 4em;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+    
+    .role_type {
+        padding-bottom: 2em;
+        text-transform: uppercase;
+        color: $grey;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////// contact section
+.contact_details_section {
+    padding: 0 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+    }
+
+    .contact_method {
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .contact_title {
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .techtee_email {
+        text-transform: lowercase;
+    }
+}
+
+
+///////////////// home section
+.contact_video {
+    height: 100%;
+    padding: 0 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0 2rem;
+    }
+}
+
+
+///////////////// careers section
+.apply {
+    padding: 6rem 6rem 2rem 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 6rem 2rem 2rem 2rem;
+    }
+}
+
+.email {
+    padding: 0 6rem;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        padding: 0;
+        text-align: center;
+    }
+}
